@@ -23,6 +23,7 @@ class BearTest < MiniTest::Test
 
     def test_river_gets_fish_value_5()
         fish_value = 5
+        binding.pry
         assert_equal(fish_value, @rivers.getFishValue("Potomac", "Susan"))
     end
 
