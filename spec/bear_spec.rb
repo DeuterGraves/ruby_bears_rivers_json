@@ -34,7 +34,7 @@ class BearTest < MiniTest::Test
     end
 
     def test_no_river_exception()
-        assert_equal("I'm sorry Dave, that's not a river", @rivers.getFishIfRiver("Amazon", "Bob"))
+        assert_equal("I'm sorry Dave, the Amazon is not a river", @rivers.getFishIfRiver("Amazon", "Bob"))
     end
 
     def test_gets_fish_if_river()

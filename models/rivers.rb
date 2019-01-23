@@ -32,7 +32,7 @@ class Rivers
             getFishValue(river, fish)
         else
             # raise "I'm sorry Dave, that's not a river"
-            p "I'm sorry Dave, that's not a river"
+            return "I'm sorry Dave, the #{river} is not a river"
         end
     end
 
