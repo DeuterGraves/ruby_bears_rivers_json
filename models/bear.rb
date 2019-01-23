@@ -9,8 +9,5 @@ class Bear
         @stomach = stomach
     end
 
-    # def getFishValue(river, fish)
-    #     rivers[river][fish]
-    # end
 
 end

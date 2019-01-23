@@ -4,14 +4,15 @@ class Rivers
     attr_accessor :fish_data
 
     def initialize()
-        @fish_data = []
+        data = File.read('./data/fishes.json')
+        @fish_data = JSON.parse(data)
     end
 
-    def getRiverData()
-        data = File.read('./data/fishes.json')
-        river_stats = JSON.parse(data)
-        @fish_data << river_stats
+    def getFishValue(river, fish)
+        fish_value = @fish_data[river][fish]
+        return fish_value.to_f
     end
+
 
 end
 
