@@ -1,5 +1,6 @@
 require('json')
 require('pry')
+require('date')
 
 class Rivers
     attr_accessor :fish_data
@@ -10,7 +11,9 @@ class Rivers
     end
 
     def getFishValue(river, fish)
-        # binding.pry
+        
+        date = Date.new(2019,01,5)
+        binding.pry
         fish_value = @fish_data[river][fish]
         return fish_value.to_f
     end
